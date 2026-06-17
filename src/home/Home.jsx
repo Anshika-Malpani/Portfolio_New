@@ -163,7 +163,7 @@ function Home() {
 
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="md:hidden p-2 text-[#dac5a7] hover:bg-white/10 rounded-xl transition-all duration-300 backdrop-blur-sm"
+                            className="md:hidden p-2 text-[#dac5a7] hover:bg-white/10 rounded-xl transition-all duration-100 backdrop-blur-sm"
                             aria-label="Toggle menu"
                         >
                             <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -177,7 +177,7 @@ function Home() {
                     </div>
 
                     <div
-                        className={`md:hidden transition-all duration-500 overflow-hidden ${
+                        className={`md:hidden  overflow-hidden ${
                             isMenuOpen ? "max-h-96 opacity-100 mt-4" : "max-h-0 opacity-0"
                         }`}
                     >
@@ -201,7 +201,7 @@ function Home() {
             </div>
 
             {/* Hero Section */}
-            <div className="relative pt-32 md:pt-40 lg:pt-32 min-h-screen flex items-center">
+            <div className="relative  pt-24 md:pt-40 lg:pt-32 min-h-screen flex items-center">
                 <div className="w-[90%] max-w-7xl mx-auto">
                     <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                         <div className="flex-1 text-center lg:text-left space-y-6 md:space-y-8">
@@ -236,9 +236,11 @@ function Home() {
                                         <div className="absolute inset-0 -translate-x-full group-hover:translate-x-0 bg-linear-to-r from-[#f0e6d2] to-[#dac5a7] transition-transform duration-500" />
                                     </button>
                                 </Link>
-                                <button className="px-8 py-3 rounded-full border-2 border-[#dac5a7]/30 text-[#dac5a7] font-semibold hover:bg-[#dac5a7]/10 hover:border-[#dac5a7]/50 transition-all duration-300">
+                               <Link to="/about">
+                               <button className="px-8 py-3 rounded-full border-2 border-[#dac5a7]/30 text-[#dac5a7] font-semibold hover:bg-[#dac5a7]/10 hover:border-[#dac5a7]/50 transition-all duration-300">
                                     Contact Me
                                 </button>
+                               </Link>
                             </div>
                         </div>
 
@@ -257,7 +259,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+                <div className="absolute hidden md:block md:bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
                 <div className="w-6 h-10 rounded-full border-2 border-[#dac5a7]/30 flex justify-center">
                     <div className="w-1 h-3 bg-[#dac5a7]/50 rounded-full mt-2 animate-pulse" />
                 </div>
@@ -488,7 +490,7 @@ function Home() {
                             <div className="relative">
                                 <div className="w-64 h-64 md:w-65 md:h-65 rounded-lg  bg-linear-to-br overflow-hidden from-[#dac5a7]/20 to-[#f0e6d2]/10 flex items-center justify-center border-4 border-[#dac5a7]/30">
                                     {/* <img className="w-78 h-78 object-cover" src="Images/profile.jpg" alt="Profile" /> */}
-                                    <span className="text-[10vw]">👩‍💻</span>
+                                    <span className="text-9xl md:text-[10vw]">👩‍💻</span>
                                 </div>
                                 {/* <div className="absolute -bottom-2 -right-2 w-20 h-20 bg-gradient-to-r from-[#dac5a7] to-[#f0e6d2] rounded-full flex items-center justify-center shadow-lg">
                                     <span className="text-3xl">✨</span>
