@@ -269,7 +269,7 @@ function Home() {
            
             {/* Projects Section */}
             <div>
-                <div className="relative pt-28 pb-20">
+                <div className="relative pt-28 md:pb-20">
                 <div className="w-[90%] max-w-7xl mx-auto">
                     {/* Header Section */}
                     <div className="text-center mb-12 md:mb-16">
@@ -416,7 +416,7 @@ function Home() {
             </div>
 
             {/* Skills Section */}
-            <div className="relative pt-32 pb-20">
+            <div className="relative pt-28 md:pb-20">
                 <div className="w-[90%] max-w-7xl mx-auto">
                     {/* Header Section */}
                     <div className="text-center mb-12 md:mb-16">
@@ -456,7 +456,7 @@ function Home() {
                     </div>
 
                     {/* Call to Action */}
-                    <div className="text-center py-16 mt-8">
+                    <div className="text-center pt-8 md:py-16 md:mt-8">
                         <p className="text-[#dac5a7]/60 mb-6">Always learning and exploring new technologies</p>
                         <Link to="/projects">
                             <button className="group relative px-8 py-3 rounded-full bg-linear-to-r from-[#dac5a7] to-[#f0e6d2] text-[#0a0a0a] font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#dac5a7]/25">
@@ -469,7 +469,7 @@ function Home() {
             </div>
 
             {/* About Section */}
-            <div className="relative pt-16 pb-20">
+            <div className="relative pt-28 md:pb-20">
                 <div className="w-[90%] max-w-7xl mx-auto">
                     {/* Header Section */}
                     <div className="text-center mb-12 md:mb-16">
